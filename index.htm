@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="quizTitle">Choose a Quiz:</h1>
+    <button id="back"  style="display: none;">Back</button>
+    <div class="container">
+            <div class="quiz-options">
+            <img id="html" src="htm.png" onclick="loadQuiz('html-css')">
+            <img id="js" src="js.png"onclick="loadQuiz('javascript')">
+            <img id="py" src="python.png"onclick="loadQuiz('python')">
+        </div>
+         <!-- Floating Score and Timer -->
+        <div id="floating-score" style="display: none;">Score: 0</div>
+        
+        <div id="timer-display" style="display: none; position: fixed; top: 10px; right: 10px;">00:00</div>
+
+        <div id="quiz-container"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
