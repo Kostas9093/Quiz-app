@@ -1,0 +1,297 @@
+/* Universal Box Sizing */
+* {
+    margin:0;
+    box-sizing: border-box;
+    padding: 0px;
+  }
+  
+  /* Body Background */
+  body {
+    background-color: #214770;
+  }
+  
+  /* Flex Container Setup */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px; /* Adjust or remove padding based on your design */
+  }
+  
+  /* Typography */
+  h1, h2, h3, p, a, li, code, .error {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  code{
+    color:green;
+    font-size:4vh;
+    margin-bottom:3%;
+  }
+  
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6vw;
+    color: #d0ff00;
+    text-shadow: rgb(0, 0, 0) 2px 1px;
+  }
+  
+  h2, h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: #d0ff00;
+    text-shadow: #ffffff;
+    
+  }
+  
+  p, li {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #ffffff;
+  }
+  
+  li {
+    font-size: 0.4em;
+  }
+  
+  a {
+    color: #006eff;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  /* Quiz Options Styling */
+.quiz-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.quiz-options img {
+  width: 30%;
+  max-width: 100px;
+  cursor: pointer;
+  transition: background 2s;
+  background-color: rgb(6, 26, 90);
+}
+
+
+  
+  /* Buttons */
+  .btn, .btn2 {
+    background-color: #006eff;
+    border-radius: 10%;
+    border-color: #ffffff;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn:hover, .btn2:hover {
+    background-color: rgb(0, 255, 153);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  /* .btn2 {
+    background-color: #11ff00;
+    border-radius: 25%;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    align-self: center; 
+    padding: 10px 20px;
+  } */
+  
+  /* Input Styles */
+  input[type="text"], input[name="Name"], input[name="Score"], input[name="Time"], input[type="submit"] {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+    width: auto;
+    
+  }
+  
+  input[type="text"], .btn2 {
+    margin-top: 5px; /* Space between label text and input */
+    padding: 0.5em; /* Adequate padding inside inputs and button for visual appeal */
+  }
+  
+  
+  /* input[type="submit"] {
+    background-color: rgb(255, 251, 0);
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 2em;
+    height: 20px;
+  } */
+  
+  /* Form Layouts */
+  form, .form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /* This ensures form contents are centered and responsive */
+  
+  /* Centralized Form Setup */
+  form#submitForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; 
+    margin: 0 auto; 
+  }
+  
+  /* Input Container */
+  .inputs-container {
+    display: flex;
+    flex-direction: column; /* Adjusted for vertical stacking */
+    width: 100%;
+    align-items: center; /* Ensures children are centered */
+    flex-wrap: wrap;
+  }
+  
+  /* Label Styling for Consistency */
+  .inputs-container label {
+    display: flex;
+    flex-direction: row; /* Ensures labels and inputs are vertically aligned */
+    align-items: center; /* Aligns label contents centrally */
+    width: 100%;
+    padding:0%;
+    margin:0;
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Styling for Each Label in the Form */
+  form#submitForm > .inputs-container > label {
+    flex: 1; /* Ensures labels take equal space */
+    justify-content: center; /* Centralizes label contents */
+    min-width: 100px; /* Ensures a minimum width for each label/input */
+   
+  }
+  
+  /* Button Styling */
+  .btn2 {
+    display: block;
+    margin-top: 20px; /* Space above the submit button */
+    width: auto; /* Allows the button to adjust its width based on content */
+    align-self: center; /* Ensures the button is centered */
+  }
+  
+  label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  
+  /* Miscellaneous Elements */
+  .text-container, .logo, .footer, #floating-score, #timer-display {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Image Transitions */
+    img {
+   
+    justify-content:center;
+    -webkit-transition: background 2s;
+    transition: background 2s;
+    background-color:rgb(6, 26, 90);
+  } 
+   
+  img:hover {
+    background-color: #000000;
+  }
+
+  
+  /* Score and Time Displays */
+  #floating-score, #timer-display {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 2%;
+    left: 1%;
+    z-index: 100;
+    background-color: #ffffff;
+    border-style: double;
+    font-size: 1.75vw;
+  }
+  
+  #timer-display {
+    right: 6%;
+    left: auto;
+  }
+  
+  /* Individual Forms */
+  #myForm, #myForm1, #myForm2,#myForm3,
+  #myForm4, #myForm5, #myForm6, #myForm7, #myForm8, #myForm9,#myForm10,#myForm11,#myForm12, #myForm13,#myForm14,#myForm15,#myForm16,#myForm17,#myForm18,#myForm19,#myForm20,#myForm21,#myForm22,#myForm23,#myForm24,#myForm25,#myForm26,#myForm27,#myForm28,#myForm29, #myForm30 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-style: double;
+    border-color: rgb(255, 255, 255);
+    border-width: 15px;
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  
+  @media (max-width: 360px) {
+    * {
+      padding: 10px;
+    }
+  
+    .container, .text-container, .btn, .btn2, form, .form1, form#submitForm {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .inputs-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    label, .inputs-container label {
+      width: 100%;
+      align-items: center;
+    }
+  
+    input[type="text"], .btn2 {
+      width: 100%;
+    }
+  
+    h1, h2, h3, p, a, li, code, .error {
+      font-size: 5vw;
+    }
+  
+    li {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  
